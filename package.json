@@ -1,0 +1,50 @@
+{
+  "name": "@gbesse/exceptionos",
+  "version": "0.1.0",
+  "description": "Resolve recurring order-reference exceptions with reviewed precedents and auditable proposals.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.mts",
+      "import": "./src/index.mjs"
+    },
+    "./jev": {
+      "types": "./src/jev.d.mts",
+      "import": "./src/jev.mjs"
+    }
+  },
+  "bin": {
+    "exceptionos": "./bin/exceptionos.mjs"
+  },
+  "files": [
+    "src",
+    "bin",
+    "examples",
+    "packs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "typecheck": "tsc --noEmit --strict --target ES2022 --module NodeNext docs/public-api-types.mts",
+    "test": "node --test",
+    "demo": "node examples/demo.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbesse/exceptionos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gbesse/exceptionos/issues"
+  },
+  "dependencies": {
+    "@gbesse/decisionpacks": "github:gbesse/decisionpacks#3c90b6e667c16653b9a6ae00b376df9bddbd8461"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
