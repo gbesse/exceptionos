@@ -24,7 +24,7 @@ The final document preserves the quantity and unit, identifies the reviewer, and
 ## Embed it
 
 ```sh
-npm install github:gbesse/exceptionos#v0.1.0
+npm install github:gbesse/exceptionos#v0.1.1
 ```
 
 ```js
@@ -63,6 +63,10 @@ The lexical candidate score counts overlapping words; it is not semantic similar
 This alpha has no web inbox, authentication, ERP connector or background automation. Exporting a proposal never changes an ERP. Imported snapshots and reviewer identities must come from trusted host storage. A hash-linked audit trail detects inconsistent edits; an attacker who controls a snapshot can rewrite and rehash it. It is not a signed authorization record. There is no hosted service or cross-customer learning.
 
 The possible long-term advantage is the accumulating, customer-scoped resolution history and the integrations built around it. Today this repository provides the workflow and data format; it does not already have a customer dataset or distribution moat.
+
+## Shareable demo report
+
+Run `npm run demo:report` to capture this repository’s bundled example as one JSON object with the project purpose, version and complete demo output. The command fails if the demo fails, so the report is useful when sharing a reproducible first look or reporting unexpected behavior. The bundled demo’s data and safety boundaries still apply.
 
 ## Validation and Jev integration
 
